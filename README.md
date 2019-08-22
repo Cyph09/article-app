@@ -1,2 +1,2 @@
 # Article app
-Re-introduction to Node.js and express
+Simple article listing API/server  app to revise some concepts of Node.s and Express
