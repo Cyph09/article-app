@@ -1,0 +1,30 @@
+{
+  "name": "article-lister-app",
+  "version": "1.0.0",
+  "description": "An article app to reintroduce Nodejs, express, REST API, templating",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [
+    "Nodejs",
+    "express",
+    "REST",
+    "API",
+    "handlebars",
+    "JavaScript"
+  ],
+  "author": "Swaleh Mhina",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^15.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "moment": "^2.24.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
