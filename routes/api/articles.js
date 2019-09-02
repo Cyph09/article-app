@@ -91,7 +91,8 @@ function validateInput(article) {
       .min(3)
       .max(30)
       .required(),
-    read_time: Joi.string().required()
+    read_time: Joi.string().required(),
+    published: Joi.string()
   };
 
   return Joi.validate(article, schema);
