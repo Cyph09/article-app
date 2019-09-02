@@ -35,11 +35,11 @@ router.post("/", (req, res) => {
     name: value.name,
     author: value.author,
     read_time: value.read_time,
-    published: moment().format("YYYY-MM-DD")
+    published: value.published
   };
 
   articles.push(newArticle);
-  res.json({message: 'New article added', articles});
+  res.json({ message: "New article added", articles });
 });
 
 // Update an article

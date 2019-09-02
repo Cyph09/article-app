@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require('cors');
 const exphbs = require("express-handlebars");
 const articles = require("./routes/api/articles");
 const articles_arr = require("./data/Articles");
@@ -10,6 +11,7 @@ app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
 // Body Parse middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
